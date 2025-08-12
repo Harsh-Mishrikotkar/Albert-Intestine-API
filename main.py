@@ -8,9 +8,9 @@ from langchain_core.messages import HumanMessage, AIMessage
 from langchain_core.output_parsers import StrOutputParser
 
 
-load_dotenv(dotenv_path=".env")
+load_dotenv()
 
-GeminiKey = os.getenv("GEMINI_API_KEY")
+GeminiKey = os.getenv("GeminiApiKey")
 
 # Define the system prompt for the AI model
 SystemPrompt = """
